@@ -1,0 +1,25 @@
+body {
+    background-color: #3498db; /* Blue background color */
+    color: white; /* White text color */
+    font-style: italic; /* Italic font style for the entire page */
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Add your additional styles here as needed */
+
+#paypal-button-container {
+    margin-top: 20px; /* Add some space above the PayPal button */
+}
+
+/* Style for the PayPal button */
+button {
+    padding: 10px;
+    background-color: #1abc9c; /* Green button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+}

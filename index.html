@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PayPal Integration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="paypal-button-container" class="paypal-button-container">
+        <!-- PayPal Button will be rendered here -->
+    </div>
+
+    <button id="visible-paypal-button" onclick="initiatePayPalPayment()">Pay with PayPal</button>
+
+    <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&enable-funding=venmo,credit,card"></script>
+    <script src="script.js"></script>
+
+    <script>
+        function initiatePayPalPayment() {
+            // Trigger the PayPal button click
+            document.querySelector('.paypal-button-container button').click();
+        }
+    </script>
+</body>
+</html>
